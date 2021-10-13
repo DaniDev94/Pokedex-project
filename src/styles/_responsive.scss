@@ -1,0 +1,13 @@
+$desktop: 1280px;
+
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+
+// En styles.scss
+// @include desktop {
+// }

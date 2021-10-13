@@ -1,0 +1,157 @@
+@import "../styles/normalize";
+@import "../styles/responsive";
+@import "../styles/fonts";
+
+.b-header {
+  background-color: #ff0000;
+  text-align: center;
+  border-bottom: 3px solid white;
+  padding: 5%;
+  @include desktop {
+    padding: 2%;
+  };
+  &__title {
+    font-family: "poke";
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+    @include desktop {
+      font-size: 25px;
+      letter-spacing: 10px;
+    };
+  };
+};
+
+.b-img1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  &__img1 {
+    padding: 10%;
+    width: 30%;
+    @include desktop {
+      padding: 4%;
+      width: 13%;
+    };
+  };
+};
+
+.b-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__input {
+    border: none;
+    border: 2px solid #000000;
+    margin-bottom: 4%;
+    padding: 2%;
+    font-family: "poke";
+    font-size: 12px;
+    text-align: center;
+    height: 2%;
+    @include desktop {
+      padding: 0.80rem 10%;
+      margin-bottom: 2%;
+      font-size: 18px;
+    };
+  };
+  &__btn {
+    font-family: "poke";
+    font-weight: bolder;
+    font-size: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 2% 6%;
+    cursor: pointer;
+    @include desktop {
+      padding: 1% 5%;
+      font-size: 15px;
+    };
+    &:hover {
+      background-color: #ff0000;
+      color: #ffffff;
+    };
+  };
+  &__text {
+    font-family: "poke";
+    font-size: 10px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin: 5%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #ffffff;
+    @include desktop {
+        margin: 2%;
+        padding-bottom: 1%;
+        font-size: 12px;
+      };
+  };
+};
+
+.b-list {
+  list-style: none;
+  padding: 0;
+  margin: 10%;
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-top: 5%;
+  };
+};
+
+.b-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10%;
+  border: 5px solid #ff0000;
+  box-sizing: border-box;
+  margin-bottom: 15%;
+  text-align: center;
+  @include desktop {
+   width: 20rem;
+  };
+  
+  &__id {
+    font-family: "poke";
+    font-size: 20px;
+    margin: 7%;
+    @include desktop {
+        margin: 9%;
+      };
+  };
+};
+
+.b-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20%;
+  &__image {
+    width: 50%;
+    margin: 10%;
+  };
+};
+
+.b-container-name {
+  width: 100%;
+  margin-top: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__name {
+    font-family: "poke";
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10%;
+  };
+};
